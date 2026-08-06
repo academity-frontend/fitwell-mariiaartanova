@@ -1,0 +1,52 @@
+:root {
+    --font-family-main: 'Titillium Web', san-serif;
+
+    --font-size-h1: 60px;
+    --font-size-h2: 45px;
+    --font-size-h3: 35px;
+    --font-size-body:25px;
+    --font-size-p: 20px;
+    --font-size-xl: 18px;
+    --font-size-l: 17px;
+    --font-size-s: 16px;
+    --font-size-xs: 14px;    
+    
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 600;
+    --font-weight-large: 700;
+
+
+    --line-height-xs: 24px;
+    --line-height-s: 25px;
+    --line-height-m: 26px;
+    --line-height-l: 27px;
+    --line-height-xl: 29px;
+    --line-height-2xl: 59px;
+    --line-height-3xl: 78px;
+
+
+    --spacing-xs: 8px;
+    --spacing-2xs: 10px;
+    --spacing-3xs: 12px;
+    --spacing-s: 16px;
+    --spacing-sm: 20px;
+    --spacing-m: 24px;
+    --spacing-ml: 26px;
+    --spacing-l: 28px;
+    --spacing-xl: 30px;
+    --spacing-2xl: 36px;
+    --spacing-3xl: 38px;
+    --spacing-4xl: 40px;
+    --spacing-5xl: 46px;
+    --spacing-6xl: 50px;
+    --spacing-7xl: 60px;
+    --spacing-8xl: 100px;
+
+    
+    --radius-s: 8px;
+    --radius-m: 16px;
+    --radius-l: 30px;
+    --radius-xl: 48px;
+    --radius-xxl: 100px;
+    }
