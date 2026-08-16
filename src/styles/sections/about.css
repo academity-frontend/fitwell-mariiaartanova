@@ -1,0 +1,122 @@
+.about {
+    background-color: var(--background-surface-Fill-color);
+    padding-top: var(--spacing-8xl);
+    padding-bottom: var(--spacing-8xl);
+
+    @media (max-width: 1024px) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    @media (max-width: 830px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.about__wrapper {
+    display: flex;
+    gap: 50px;
+
+    @media (max-width: 1024px) {
+        gap: var(--gap-ml);
+    }
+
+    @media (max-width: 830px) {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+}
+
+.about-images {
+    position: relative;
+    width: 100%;
+
+    @media (max-width: 830px) {
+        display: none;
+    }
+}
+
+.about__image-back {
+    width: 76%;
+    border-radius: var(--radius-xl);
+    object-fit: cover;
+    margin-bottom: 100px;
+
+    @media (max-width: 1041px) {
+        margin-bottom: 68px;
+    }
+}
+
+.about__image-front {
+    position: absolute;
+    width: 76%;
+    border-radius: var(--radius-xl);
+    border: 8px solid var(--backgroung-main-color);
+    top: 174px;
+    right: -4px;
+
+    @media (max-width: 1041px) {
+        top: 110px;
+        right: -2px;
+    }
+}
+
+.about-text {
+    width: 100%;
+}
+
+.about__subtitle {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-textAccent-color-number);
+}
+
+.about__title {
+    color: var(--text-secondary-color);
+    margin: var(--spacing-sm) 0 var(--spacing-xl);
+
+    @media (max-width: 1041px) {
+        margin: var(--spacing-sm) 0 0;
+    }
+}
+
+.about-images-mobile {
+    display: none;
+
+    @media (max-width: 830px) {
+        display: flex;
+        margin-bottom: var(--spacing-5xl);
+    }
+}
+
+.about__image-back-mobile {
+    width: 70%;
+    margin-bottom: var(--spacing-7xl);
+    margin-top: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    object-fit: cover;
+}
+
+.about__image-front-mobile {
+    position: absolute;
+    width: 60%;
+    border-radius: var(--radius-xl);
+    border: 8px solid var(--backgroung-main-color);
+    bottom: 256px;
+    right: 26px;
+}
+
+.about__description {
+    padding: var(--spacing-2xl) 0 var(--spacing-2xl);
+    margin: 0;
+
+    @media (max-width: 1041px) {
+        padding: var(--spacing-xl) 0 var(--spacing-xl);
+    }
+
+    @media (max-width: 830px) {
+        padding: var(--spacing-2xl) 0 var(--spacing-2xl);
+    }
+}

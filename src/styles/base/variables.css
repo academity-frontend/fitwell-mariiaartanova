@@ -22,8 +22,10 @@
     --line-height-m: 26px;
     --line-height-l: 27px;
     --line-height-xl: 29px;
-    --line-height-2xl: 59px;
-    --line-height-3xl: 78px;
+    --line-height-xxl: 35px;
+    --line-height-2xl: 47px;
+    --line-height-3xl: 59px;
+    --line-height-4xl: 78px;
 
 
     --spacing-xs: 8px;
@@ -49,4 +51,11 @@
     --radius-l: 30px;
     --radius-xl: 48px;
     --radius-xxl: 100px;
-    }
+
+
+    --gap-s: 8px;
+    --gap-m: 16px;
+    --gap-ml: 26px;
+    --gap-l: 30px;
+    --gap-xl: 36px;
+}
