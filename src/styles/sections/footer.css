@@ -29,7 +29,7 @@
     }
 }
 
-.footer-title {
+.footer__title {
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-xxl);
@@ -37,7 +37,7 @@
     margin: 0;
 }
 
-.footer__info__description {
+.footer__info-description {
     color: var(--text-neutral-color);
     margin: 0;
     padding-right: var(--spacing-7xl);
@@ -128,7 +128,7 @@
     line-height: var(--line-height-m);
 }
 
-.footer-icon {
+.footer__icon {
     margin-right: var(--spacing-s);
 }
 

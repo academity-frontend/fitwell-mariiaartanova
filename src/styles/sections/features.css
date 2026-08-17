@@ -71,7 +71,7 @@
     }
 }
 
-.features__card-wrapper {
+.features__card {
     display: flex;
     background-color: var(--background-surface-Fill-color);
     padding: var(--spacing-2xl);
@@ -79,7 +79,7 @@
 
 }
 
-.features__card-one {
+.features__card--one {
     grid-column: 1/2;
     grid-row: 1/2;
 
@@ -94,7 +94,7 @@
     }
 }
 
-.features__card-two {
+.features__card--two {
     grid-column: 2/3;
     grid-row: 1/2;
 
@@ -104,7 +104,7 @@
     }
 }
 
-.features__card-three {
+.features__card--three {
     grid-column: 1/2;
     grid-row: 2/3;
 
@@ -114,7 +114,7 @@
     }
 }
 
-.features__card-four {
+.features__card--four {
     grid-column: 2/3;
     grid-row: 2/3;
 
@@ -124,10 +124,10 @@
     }
 }
 
-.features__card-icon-wrapper-one,
-.features__card-icon-wrapper {
+.features__card-icon-wrapper,
+.features__card-icon-wrapper--one {
     display: flex;
-    background-color: var(--background-surface-Fill-color);
+    background-color: var(--background-surface-Fill2-color);
     border-radius: var(--radius-xxl);
     justify-content: center;
     align-items: center;
@@ -137,8 +137,8 @@
     margin: 0;
 }
 
-.features__card-icon-wrapper {
-    background-color: var(--background-surface-Fill2-color);
+.features__card-icon-wrapper--one {
+    background-color: var(--background-surface-Fill-color);
     border-radius: var(--radius-xxl);
 }
 
@@ -152,32 +152,36 @@
 }
 
 .features__card-title,
-.features__card-title-one {
+.features__card-title--one {
     font-size: var(--font-size-p);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-xl);
     margin: 0;
 }
 
-.features__card-title-one {
+.features__card-title--one {
     color: var(--text-primary-color);
 }
 
 .features__card-description,
-.features__card-description-one {
+.features__card-description--one {
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-m);
     margin: 0;
 }
 
-.features__card-description-one {
+.features__card-description--one {
     color: var(--text-primary-color);
 }
 
+.features__image {
+    flex: 1;
+}
+
 .features__image-item {
+    display: block;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: var(--radius-l);
 

@@ -29,7 +29,7 @@
     }
 }
 
-.about-images {
+.about__images {
     position: relative;
     width: 100%;
 
@@ -63,7 +63,7 @@
     }
 }
 
-.about-text {
+.about__text {
     width: 100%;
 }
 
@@ -82,7 +82,7 @@
     }
 }
 
-.about-images-mobile {
+.about__images-mobile {
     display: none;
 
     @media (max-width: 830px) {
@@ -91,7 +91,7 @@
     }
 }
 
-.about__image-back-mobile {
+.about__image-back--mobile {
     width: 70%;
     margin-bottom: var(--spacing-7xl);
     margin-top: var(--spacing-xl);
@@ -99,7 +99,7 @@
     object-fit: cover;
 }
 
-.about__image-front-mobile {
+.about__image-front--mobile {
     position: absolute;
     width: 60%;
     border-radius: var(--radius-xl);

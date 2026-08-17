@@ -1,6 +1,6 @@
 .hero__wrapper {
     background-image: linear-gradient(to right, #3F3047CC 50%, #3F304733),
-    url(/src/img/hero/image-background.jpg),
+    url(/src/img/hero/image-background.webp),
     linear-gradient(var(--backgroung-secondary-color));
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,7 +8,7 @@
     width: 100%;
     padding-bottom: var(--spacing-8xl);
 
-    @media (max-width: 768px) {
+    @media (max-width: 830px) {
         padding-bottom: 32px;
     }
 }

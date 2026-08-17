@@ -50,7 +50,7 @@
 }
 
 .services__card,
-.services__card-one {
+.services__card--one {
     background-color: var(--background-surface-Fill-color);
     border-radius: var(--radius-l);
     display: block;
@@ -65,12 +65,12 @@
     overflow: hidden;
 }
 
-.services__card-one {
+.services__card--one {
     background-color: var(--backgroung-main-color);
 }
 
 .services__card-icon-wrapper,
-.services__card-icon-wrapper-one {
+.services__card-icon-wrapper--one {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@
     margin: 0 auto;
 }
 
-.services__card-icon-wrapper-one {
+.services__card-icon-wrapper--one {
     border-radius: var(--radius-l);
 }
 
