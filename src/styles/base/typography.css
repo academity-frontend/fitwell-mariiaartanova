@@ -15,7 +15,7 @@ h1 {
     line-height: var(--line-height-4xl);
     color: var(--text-primary-color);
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1020px) {
         font-size: var(--font-size-h2);
         line-height: var(--line-height-3xl);
     }
@@ -82,7 +82,7 @@ li {
     max-width: 1440px;
     margin: 0 auto;
     padding-inline: 100px;
-    overflow-y: scroll;
+    overflow-x: hidden;
 
     @media (max-width: 830px) {
         padding-inline: 24px;

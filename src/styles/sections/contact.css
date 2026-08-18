@@ -1,6 +1,6 @@
 .contact__wrapper {
     display: flex;
-    gap: var(--spacing-7xl);
+    gap: 70px;
     padding-top: var(--spacing-8xl);
     padding-bottom: var(--spacing-8xl);
 
@@ -29,6 +29,10 @@
     min-height: 100%;
     object-fit: cover;
     border-radius: var(--radius-l);
+
+    @media (max-width: 1024px) {
+
+    }
 }
 
 .contact__img-mobile {
@@ -36,13 +40,13 @@
 
     @media (max-width: 830px) {
         display: block;
-        margin-bottom: var(--spacing-2xl);
+        margin-bottom: var(--spacing-xl);
     }
 }
 
 .contact__img-item-mobile {
     width: 100%;
-    min-height: 100%;
+    min-height: 416px;
     object-fit: cover;
     border-radius: var(--radius-l);
 }
@@ -54,10 +58,10 @@
 
 .contact__form-title {
     margin: 0;
-    padding: var(--spacing-7xl) 0 var(--spacing-sm);
+    padding: var(--spacing-6xl) 0 var(--spacing-s);
 
     @media (max-width: 1024px) {
-        padding: var(--spacing-xl) 0 var(--spacing-sm);
+        padding: var(--spacing-3xl) 0 var(--spacing-sm);
     }
 
     @media (max-width: 830px) {
@@ -70,7 +74,7 @@
     padding-bottom: var(--spacing-sm);
 
     @media (max-width: 1024px) {
-        padding-bottom: var(--spacing-2xl);
+        padding-bottom: var(--spacing-xl);
     }
 
     @media (max-width: 830px) {
@@ -78,11 +82,14 @@
     }
 }
 
+.contact__form-label {
+    width: 50%;
+}
 .input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-s);
     border: 2px solid var(--background-surface-Stroke-color);
     border-radius: var(--radius-m);
     padding: var(--spacing-s);
@@ -93,9 +100,11 @@
     line-height: 16px;
     cursor: pointer;
     outline: none;
+    transition: border-color 0.3s;
 
     @media (max-width: 1024px) {
         width: 100%;
+        margin-bottom: var(--spacing-xs);
     }
 }
 
@@ -109,8 +118,9 @@
     color: var(--text-secondary-color);
 }
 
-.input:active {
-    border-color: var(--input-active-color);
+.input:not(:placeholder-shown):not(:focus) {
+    border-color: var(--input-filled-color);
+    color: var(--text-secondary-color);
 }
 
 .input:user-valid {
@@ -125,7 +135,7 @@
     margin-bottom: var(--spacing-2xl);
 
     @media (max-width: 1024px) {
-        margin-bottom: var(--spacing-3xs);
+        margin-bottom: var(--spacing-s);
     }
 
     @media (max-width: 830px) {
@@ -207,6 +217,9 @@
     border-color: var(--border-color-checkbox-invalid);
 }
 
+.contact__checkbox-text {
+    font-size: 15px;
+}
 .contact__checkbox-link {
     color: var(--text-tertiary-color);
 }

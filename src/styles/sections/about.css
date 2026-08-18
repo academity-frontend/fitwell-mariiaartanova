@@ -16,11 +16,7 @@
 
 .about__wrapper {
     display: flex;
-    gap: 50px;
-
-    @media (max-width: 1024px) {
-        gap: var(--gap-ml);
-    }
+    gap: 20px;
 
     @media (max-width: 830px) {
         display: block;
@@ -39,11 +35,15 @@
 }
 
 .about__image-back {
-    width: 76%;
+    width: 68%;
     border-radius: var(--radius-xl);
     object-fit: cover;
-    margin-bottom: 100px;
+    margin-bottom: 98px;
 
+    @media (max-width: 1024px) {
+        width: 70%;
+
+    }
     @media (max-width: 1041px) {
         margin-bottom: 68px;
     }
@@ -51,16 +51,48 @@
 
 .about__image-front {
     position: absolute;
-    width: 76%;
+    width: 72%;
     border-radius: var(--radius-xl);
     border: 8px solid var(--backgroung-main-color);
-    top: 174px;
-    right: -4px;
+    top: 168px;
+    right: 30px;
 
+    @media (max-width: 1024px) {
+        width: 74%;
+        top: 110px;
+        right: 8px;
+    }
     @media (max-width: 1041px) {
         top: 110px;
         right: -2px;
     }
+}
+
+.about__images-mobile {
+    display: none;
+
+    @media (max-width: 830px) {
+        display: flex;
+        margin-top: 0;
+        margin-bottom: var(--spacing-4xl);
+    }
+}
+
+.about__image-back--mobile {
+    width: 72%;
+    margin-bottom: var(--spacing-7xl);
+    margin-top: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    object-fit: cover;
+}
+
+.about__image-front--mobile {
+    position: absolute;
+    width: 66%;
+    border-radius: var(--radius-xl);
+    border: 8px solid var(--backgroung-main-color);
+    bottom: 282px;
+    right: 8px;
 }
 
 .about__text {
@@ -80,40 +112,18 @@
     @media (max-width: 1041px) {
         margin: var(--spacing-sm) 0 0;
     }
-}
-
-.about__images-mobile {
-    display: none;
 
     @media (max-width: 830px) {
-        display: flex;
-        margin-bottom: var(--spacing-5xl);
+        font-size: 32px;
     }
-}
-
-.about__image-back--mobile {
-    width: 70%;
-    margin-bottom: var(--spacing-7xl);
-    margin-top: var(--spacing-xl);
-    border-radius: var(--radius-xl);
-    object-fit: cover;
-}
-
-.about__image-front--mobile {
-    position: absolute;
-    width: 60%;
-    border-radius: var(--radius-xl);
-    border: 8px solid var(--backgroung-main-color);
-    bottom: 256px;
-    right: 26px;
 }
 
 .about__description {
     padding: var(--spacing-2xl) 0 var(--spacing-2xl);
     margin: 0;
 
-    @media (max-width: 1041px) {
-        padding: var(--spacing-xl) 0 var(--spacing-xl);
+    @media (max-width: 1024px) {
+        padding: var(--spacing-xl) 0 var(--spacing-s);
     }
 
     @media (max-width: 830px) {

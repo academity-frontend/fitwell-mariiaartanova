@@ -1,18 +1,36 @@
+.header {
+    position: relative;
+}
+
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--spacing-sm) 0;
+    padding: var(--spacing-m) 100px;
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    @media (max-width: 830px) {
+        padding: var(--spacing-m);
+    }
+}
+
+.header__logo {
+    align-items: flex-start;
+    justify-content: left;
 }
 
 .header__logo-icon {
+    display: flex;
+
     @media (max-width: 928px) {
         width: 84px;
         height: 56px;
-
         margin-right: var(--spacing-xs);
     }
 }
+
 .header__navigation-list {
     display: flex;
     align-items: center;
@@ -53,3 +71,4 @@
     color: var(--text-primary-color);
     width: 32px;
 }
+

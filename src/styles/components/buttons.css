@@ -55,9 +55,9 @@
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-xs);
-
+    padding: var(--spacing-s) var(--spacing-2xl);
     @media (max-width: 362px) {
-            padding: 14px 18px;
+        padding: 14px 18px;
     }
 }
 
@@ -87,7 +87,7 @@
     display: none;
 
     @media (max-width: 928px) {
-        width: 20px;
+        width: 18px;
         height: 2px;
         background-color: var(--text-primary-color);
         border-radius: 9px;
@@ -117,7 +117,9 @@
 /*/hero/*/
 
 .hero__button-secondary {
-    margin-right: var(--spacing-3xs);
+    padding: var(--spacing-s) var(--spacing-m);
+    margin-right: var(--spacing-2xs);
+
     @media (max-width: 463px) {
         width: 100%;
         margin-bottom: var(--spacing-3xs);
@@ -125,6 +127,8 @@
 }
 
 .hero__button-primary {
+    padding: var(--spacing-s) 34px;
+
     @media (max-width: 463px) {
         width: 100%;
     }
@@ -133,16 +137,15 @@
 /*/about/*/
 
 .about__button-item {
-    padding: var(--spacing-s) var(--spacing-m);
-    margin: var(--spacing-xl) 0 0;
-    gap: var(--gap-s);
+    padding: var(--spacing-s) var(--spacing-s);
+    margin: var(--spacing-ml) 0 0;
 
     @media (max-width: 1024px) {
         margin: 0;
     }
 
     @media (max-width: 830px) {
-        margin: var(--spacing-xl) 0 0;
+        margin: var(--spacing-l) 0 0;
     }
 }
 
@@ -152,6 +155,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2px;
+
+    @media (max-width: 1024px) {
+        margin-top: 58px;
+    }
 }
 
 .services__button-item {
@@ -169,7 +177,11 @@
     display: flex;
     margin: 0 auto;
     border-radius: 1000px;
-    padding-top: var(--spacing-3xs);
+    padding-top: var(--spacing-3xl);
+
+    @media (max-width: 1024px) {
+        padding-top: var(--spacing-xs);
+    }
 }
 
 .facilities__button-item {
@@ -186,11 +198,11 @@
     border-radius: 1000px;
 
     @media (max-width: 1024px) {
-        margin: 0 0 var(--spacing-xl);
+        margin: 0 0 var(--spacing-2xl);
     }
 
     @media (max-width: 830px) {
-        margin: 0 0 var(--spacing-m);
+        margin: 0 0 var(--spacing-l);
     }
 }
 

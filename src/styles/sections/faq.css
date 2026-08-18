@@ -1,6 +1,6 @@
 .faq__wrapper {
     display: flex;
-    gap: var(--spacing-7xl);
+    gap: 70px;
     padding-top: var(--spacing-8xl);
     padding-bottom: var(--spacing-8xl);
     align-items: flex-start;
@@ -31,7 +31,7 @@
 
 .faq__title {
     margin: 0;
-    padding: var(--spacing-sm) 0 var(--spacing-2xl);
+    padding: var(--spacing-sm) 0 var(--spacing-xl);
 
     @media (max-width: 830px) {
         padding-bottom: var(--spacing-m);
@@ -44,9 +44,18 @@
 
 .faq__img {
     width: 100%;
+    max-height: 278px;
     object-fit: cover;
     aspect-ratio: 16 / 9;
     border-radius: var(--radius-l);
+
+    @media (max-width: 1024px) {
+        min-height: 244px;
+    }
+
+    @media (max-width: 830px) {
+        min-height: 200px;
+    }
 }
 
 .faq__description {
@@ -54,7 +63,7 @@
     padding-bottom: var(--spacing-2xl);
 
     @media (max-width: 830px) {
-        padding-top: var(--spacing-m);
+        padding-top: var(--spacing-s);
 
     }
 }
@@ -63,6 +72,16 @@
     background-color: var(--background-surface-Fill-color);
     margin-bottom: var(--spacing-sm);
     border-radius: var(--radius-l);
+
+    @media (max-width: 1024px) {
+        margin-bottom: var(--spacing-m);
+    }
+}
+
+.faq__items-mobile {
+    @media (max-width: 830px) {
+        margin-bottom: 0;
+    }
 }
 
 .faq__summary {
@@ -88,9 +107,8 @@ details[open] .faq__summary {
     border-bottom: 3px solid #3F3047;
     transform: rotate(45deg);
     transition: transform 0.3s;
-
     top: 24px;
-    right: 40px;
+    right: 30px;
 }
 
 details[open] .faq__arrow {
@@ -100,6 +118,6 @@ details[open] .faq__arrow {
 .faq__summary-description {
     background-color: var(--background-surface-Fill-color);
     margin: 0;
-    padding: 0 var(--spacing-4xl) var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-4xl) var(--spacing-sm);
     border-radius: var(--radius-l);
 }

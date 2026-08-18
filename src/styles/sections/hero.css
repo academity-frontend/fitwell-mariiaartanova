@@ -1,4 +1,4 @@
-.hero__wrapper {
+.hero {
     background-image: linear-gradient(to right, #3F3047CC 50%, #3F304733),
     url(/src/img/hero/image-background.webp),
     linear-gradient(var(--backgroung-secondary-color));
@@ -6,6 +6,10 @@
     background-size: cover;
     background-position: 100% center;
     width: 100%;
+}
+
+.hero__wrapper {
+    padding-top: 98px ;
     padding-bottom: var(--spacing-8xl);
 
     @media (max-width: 830px) {
@@ -36,11 +40,18 @@
     padding-bottom: var(--spacing-sm);
 
     @media (max-width: 768px) {
-        padding-bottom: var(--spacing-2xl);
+        padding-bottom: var(--spacing-xl);
+        text-align: center;
     }
 }
 
 .hero__description {
     padding-bottom: var(--spacing-2xl);
     margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: var(--line-height-xs);
+        padding-bottom: var(--spacing-3xl);
+    }
 }
