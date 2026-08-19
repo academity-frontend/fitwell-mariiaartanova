@@ -18,6 +18,9 @@
     display: flex;
     gap: 20px;
 
+    @media (max-width: 1024px) {
+        gap: 34px;
+    }
     @media (max-width: 830px) {
         display: block;
         text-align: center;
@@ -42,27 +45,22 @@
 
     @media (max-width: 1024px) {
         width: 70%;
-
-    }
-    @media (max-width: 1041px) {
-        margin-bottom: 68px;
+        max-height: 330px;
+        margin-bottom: 56px;
     }
 }
 
 .about__image-front {
     position: absolute;
     width: 72%;
+    max-height: 436px;
     border-radius: var(--radius-xl);
     border: 8px solid var(--backgroung-main-color);
     top: 168px;
     right: 30px;
 
     @media (max-width: 1024px) {
-        width: 74%;
-        top: 110px;
-        right: 8px;
-    }
-    @media (max-width: 1041px) {
+        max-height: 286px;
         top: 110px;
         right: -2px;
     }
@@ -79,20 +77,35 @@
 }
 
 .about__image-back--mobile {
-    width: 72%;
+    width: 68%;
+    height: 500px;
     margin-bottom: var(--spacing-7xl);
     margin-top: var(--spacing-xl);
     border-radius: var(--radius-xl);
     object-fit: cover;
+    object-position: center 10%;
+
+    @media (max-width: 500px) {
+        width: 72%;
+        height: 288px;
+    }
 }
 
 .about__image-front--mobile {
     position: absolute;
-    width: 66%;
+    width: 63%;
+    height: 430px;
     border-radius: var(--radius-xl);
     border: 8px solid var(--backgroung-main-color);
-    bottom: 282px;
-    right: 8px;
+    bottom: 214px;
+    right: 24px;
+
+    @media (max-width: 500px) {
+        width: 66%;
+        height: 248px;
+        bottom: 278px;
+        right: 10px;
+    }
 }
 
 .about__text {
@@ -123,10 +136,16 @@
     margin: 0;
 
     @media (max-width: 1024px) {
+        font-size: 14px;
         padding: var(--spacing-xl) 0 var(--spacing-s);
     }
 
     @media (max-width: 830px) {
-        padding: var(--spacing-2xl) 0 var(--spacing-2xl);
+        font-size: var(--font-size-l);
+        padding: var(--spacing-2xl) 12px var(--spacing-2xl);
+    }
+
+    @media (max-width: 400px) {
+        font-size: var(--font-size-s);
     }
 }

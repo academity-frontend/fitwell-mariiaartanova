@@ -10,10 +10,56 @@
     position: absolute;
     right: 0;
     left: 0;
+    gap: var(--spacing-xs);
 
     @media (max-width: 830px) {
-        padding: var(--spacing-m);
+        padding: 20px var(--spacing-m) var(--spacing-m);
     }
+}
+
+.header__burger-menu {
+    display: none;
+
+    @media (max-width: 962px) {
+        display: block;
+    }
+}
+
+.header__burger-menu-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header__burger-menu-button {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.header__burger-menu-icon {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--backgroung-main-color);
+    transition: 0.3s;
+}
+
+.header__burger-menu:has(.header__burger-menu-checkbox:checked)
+.header__burger-menu-icon--top {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.header__burger-menu:has(.header__burger-menu-checkbox:checked)
+.header__burger-menu-icon--middle {
+    opacity: 0;
+}
+
+.header__burger-menu:has(.header__burger-menu-checkbox:checked)
+.header__burger-menu-icon--bottom {
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 .header__logo {
@@ -31,15 +77,33 @@
     }
 }
 
+.header__navigation {
+    @media (max-width: 962px) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--backgroung-main-color);
+    }
+}
+
 .header__navigation-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--gap-xl);
+    flex-wrap: wrap;
 
-    @media (max-width: 928px) {
-        display: none;
+    @media (max-width: 962px) {
+        flex-direction: column;
     }
+}
+
+.header__burger-menu:has(.header__burger-menu-checkbox:checked)
+.header__navigation {
+    display: block;
+    background-color: var(--backgroung-main-color);
 }
 
 .header__navigation-text {
@@ -52,6 +116,14 @@
 
 .header__navigation-text:hover {
     color: var(--text-primary-color);
+}
+
+.header__navigation-text:focus {
+    color: var(--text-primary-color);
+}
+
+.header__navigation-text:active {
+    color: var(--text-neutral-color);
 }
 
 .header__navigation-text::after {
@@ -70,5 +142,13 @@
 .header__navigation-text:hover::after {
     color: var(--text-primary-color);
     width: 32px;
+}
+
+.header__navigation-text:focus::after {
+    color: var(--text-primary-color);
+}
+
+.header__navigation-text:active::after {
+    color: var(--text-neutral-color);
 }
 

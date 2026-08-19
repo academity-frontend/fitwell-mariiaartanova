@@ -26,6 +26,7 @@
     width: 100%;
     gap: var(--gap-m);
     padding: 50px 42px;
+    flex-wrap: wrap;
 
     @media (max-width: 1024px) {
         padding: 46px 42px 52px;

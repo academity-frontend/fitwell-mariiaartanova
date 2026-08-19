@@ -4,12 +4,11 @@
 }
 
 body {
-    font-family: var(--font-family-main);
+    font-family: var(--font-family-main), sans-serif;
     margin: 0;
-    list-style: none;
 }
 
-h1 {
+.typography-h1 {
     font-size: var(--font-size-h1);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-4xl);
@@ -26,7 +25,7 @@ h1 {
     }
 }
 
-h2 {
+.typography-h2 {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-3xl);
@@ -43,7 +42,7 @@ h2 {
     }
 }
 
-h3 {
+.typography-h3 {
     font-size: var(--font-size-h3);
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-2xl);
@@ -55,7 +54,7 @@ h3 {
     }
 }
 
-p {
+.typography-p {
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-m);

@@ -26,7 +26,7 @@
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-xs);
     color: var(--text-textAccent-color-number);
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
 }
 
 .services__title {
@@ -34,24 +34,30 @@
     margin: var(--spacing-s) 0 0;
 
     @media (max-width: 1024px) {
-        padding: 0 70px 0;
+        padding: 6px 70px 0;
     }
 
     @media (max-width: 709px) {
-        padding: 0 14px 0;
+        padding: 6px 14px 0;
     }
 }
 
 .services__cards {
     display: flex;
-    gap: var(--gap-xl);
-    padding: 36px 100px var(--spacing-l);
+    gap: var(--gap-l);
+    padding: 30px 100px var(--spacing-l);
     margin-inline: -100px;
     overflow-x: scroll;
 
+
+    @media (max-width: 1024px) {
+        gap: var(--gap-xl);
+        padding: 44px 100px var(--spacing-l);
+    }
+
     @media (max-width: 830px) {
         margin-inline: -32px;
-        padding: 48px 32px var(--spacing-l);
+        padding: 44px 32px var(--spacing-l);
     }
 }
 
@@ -66,12 +72,12 @@
     padding: var(--spacing-2xl) 0;
     box-shadow: 0 0 16px 0 #00000026;
     width: 288px;
-    height: 352px;
+    min-height: 352px;
     flex-shrink: 0;
 
     @media (max-width: 1024px) {
         width: 250px;
-        height: 378px;
+        min-height: 378px;
         padding: var(--spacing-2xl) 30px;
     }
 }
@@ -111,6 +117,7 @@
 
     @media (max-width: 1024px) {
         padding-inline: 0;
+        margin: var(--spacing-m) 0 var(--spacing-xs);
     }
 }
 
@@ -123,13 +130,17 @@
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-xs);
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
     color: var(--text-neutral-color);
     transition: 0.3s;
 }
 
 .services__card-more:hover {
     text-decoration: underline;
+}
+
+.services__card-more:focus {
+    color: var(--text-textAccent-color);
 }
 
 .services__card-more:active {
