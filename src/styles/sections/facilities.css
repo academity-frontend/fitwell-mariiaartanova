@@ -2,13 +2,17 @@
     background-color: var(--background-surface-Fill-color);
     padding-top: var(--spacing-8xl);
     padding-bottom: var(--spacing-8xl);
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .facilities {
         padding-top: 64px;
         padding-bottom: 64px;
     }
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .facilities {
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -17,8 +21,10 @@
 .facilities__wrapper {
     display: flex;
     gap: var(--spacing-6xl);
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .facilities__wrapper {
         gap: var(--gap-l);
     }
 }
@@ -27,12 +33,16 @@
     flex: 0 0 40%;
     width: 100%;
     height: 100%;
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .facilities__image {
         flex: 0 0 50%;
     }
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .facilities__image {
         display: none;
     }
 }
@@ -41,8 +51,10 @@
     border-radius: var(--radius-xl);
     width: 100%;
     object-fit: cover;
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .facilities__image-item {
         width: 98%;
         height: 370px;
     }
@@ -50,8 +62,10 @@
 
 .facilities__image-mobile {
     display: none;
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .facilities__image-mobile {
         display: block;
     }
 }
@@ -81,11 +95,16 @@
     margin: 0;
     padding-top: var(--spacing-sm);
     padding-bottom: var(--spacing-3xs);
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .facilities__title {
         padding-bottom: 0;
     }
-    @media (max-width: 830px) {
+}
+
+@media (max-width: 830px) {
+    .facilities__title {
         padding-bottom: var(--spacing-xl);
     }
 }
@@ -93,11 +112,16 @@
 .facilities__description {
     margin: 0;
     padding: var(--spacing-2xl) var(--spacing-2xl) var(--spacing-2xl) 0;
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .facilities__description {
         padding: var(--spacing-xl) 0;
     }
-    @media (max-width: 830px) {
+}
+
+@media (max-width: 830px) {
+    .facilities__description {
         padding: var(--spacing-m) 0;
     }
 }

@@ -4,14 +4,18 @@
     padding-top: var(--spacing-8xl);
     padding-bottom: var(--spacing-8xl);
     align-items: flex-start;
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .faq__wrapper {
         padding-top: 32px;
         padding-bottom: 64px;
         gap: 70px;
     }
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .faq__wrapper {
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -33,12 +37,16 @@
 .faq__title {
     margin: 0;
     padding: var(--spacing-sm) 0 var(--spacing-xl);
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .faq__title {
         padding: var(--spacing-sm) 0 var(--spacing-2xl);
     }
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .faq__title {
         padding-bottom: var(--spacing-m);
     }
 }
@@ -53,12 +61,16 @@
     object-fit: cover;
     aspect-ratio: 16 / 9;
     border-radius: var(--radius-l);
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .faq__img {
         height: 244px;
     }
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .faq__img {
         height: 196px;
     }
 }
@@ -66,28 +78,34 @@
 .faq__description {
     margin: 0;
     padding-bottom: var(--spacing-2xl);
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .faq__description {
         padding-top: var(--spacing-s);
-
     }
 }
 
 .faq__items {
     background-color: var(--background-surface-Fill-color);
     border-radius: var(--radius-l);
-
-    @media (max-width: 1024px) {
-        margin-bottom: var(--spacing-m);
-    }
 }
 
 .faq__items:not(:last-child) {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-m);
+}
+
+@media (max-width: 830px) {
+    .faq__items:not(:last-child) {
+        margin-bottom: var(--spacing-sm);
+    }
 }
 
 .faq__items-mobile {
-    @media (max-width: 830px) {
+}
+
+@media (max-width: 830px) {
+    .faq__items-mobile {
         margin-bottom: 0;
     }
 }
@@ -101,8 +119,10 @@
     padding: var(--spacing-sm) var(--spacing-3xl);
     cursor: pointer;
     transition: 0.3s;
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .faq__summary {
         font-size: var(--font-size-xl);
     }
 }
@@ -120,10 +140,11 @@ details[open] .faq__summary {
     transform: rotate(45deg);
     transition: transform 0.3s;
     top: 24px;
-    right: 30px;
+    right: 44px;
+}
 
-    @media (max-width: 830px) {
-        right: 44px;
+@media (max-width: 830px) {
+    .faq__arrow {
         top: 28px;
     }
 }

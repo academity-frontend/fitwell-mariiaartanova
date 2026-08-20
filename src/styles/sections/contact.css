@@ -3,14 +3,18 @@
     gap: 70px;
     padding-top: var(--spacing-8xl);
     padding-bottom: var(--spacing-8xl);
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .contact__wrapper {
         padding-top: 32px;
         padding-bottom: 58px;
         gap: 60px;
     }
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .contact__wrapper {
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -19,8 +23,10 @@
 
 .contact__img {
     width: 100%;
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .contact__img {
         display: none;
     }
 }
@@ -30,16 +36,14 @@
     height: 100%;
     object-fit: cover;
     border-radius: var(--radius-l);
-
-    @media (max-width: 1024px) {
-
-    }
 }
 
 .contact__img-mobile {
     display: none;
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .contact__img-mobile {
         display: block;
         margin-bottom: var(--spacing-xl);
     }
@@ -60,12 +64,16 @@
 .contact__form-title {
     margin: 0;
     padding: var(--spacing-7xl) 0 var(--spacing-s);
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .contact__form-title {
         padding: var(--spacing-3xl) 0 var(--spacing-sm);
     }
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .contact__form-title {
         padding: 0 8px var(--spacing-sm) 0;
     }
 }
@@ -73,12 +81,16 @@
 .contact__form-description {
     margin: 0;
     padding-bottom: var(--spacing-sm);
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .contact__form-description {
         padding-bottom: 34px;
     }
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .contact__form-description {
         padding: 0 0 var(--spacing-sm);
     }
 }
@@ -103,8 +115,10 @@
     cursor: pointer;
     outline: none;
     transition: border-color 0.3s;
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .input {
         width: 100%;
         margin-bottom: var(--spacing-xs);
     }
@@ -136,12 +150,16 @@
 
 .contact__checkbox-wrapper {
     margin-bottom: var(--spacing-2xl);
+}
 
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    .contact__checkbox-wrapper {
         margin-bottom: var(--spacing-s);
     }
+}
 
-    @media (max-width: 830px) {
+@media (max-width: 830px) {
+    .contact__checkbox-wrapper {
         margin-bottom: var(--spacing-2xl);
     }
 }
