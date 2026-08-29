@@ -59,7 +59,7 @@
     gap: var(--gap-l);
     padding: 30px 100px var(--spacing-l);
     margin-inline: -100px;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 @media (max-width: 1024px) {
@@ -84,7 +84,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-2xl) var(--spacing-2xl);
     box-shadow: 0 0 16px 0 #00000026;
     width: 288px;
     min-height: 352px;
@@ -96,7 +96,7 @@
     .services__card--accent {
         width: 250px;
         min-height: 378px;
-        padding: var(--spacing-2xl) 30px;
+        padding: var(--spacing-2xl) var(--spacing-xl);
     }
 }
 
@@ -130,13 +130,11 @@
     font-weight: var(--font-weight-large);
     line-height: var(--line-height-xxl);
     color: var(--text-secondary-color);
-    padding-inline: var(--spacing-2xl);
     margin: var(--spacing-ml) 0 var(--spacing-xs);
 }
 
 @media (max-width: 1024px) {
     .services__card-title {
-        padding-inline: 0;
         margin: var(--spacing-m) 0 var(--spacing-xs);
     }
 }
@@ -152,7 +150,7 @@
     line-height: var(--line-height-xs);
     letter-spacing: 0.06em;
     color: var(--text-neutral-color);
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .services__card-more:hover {

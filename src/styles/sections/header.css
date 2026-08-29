@@ -50,7 +50,7 @@
     width: 100%;
     height: 2px;
     background-color: var(--backgroung-main-color);
-    transition: 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .header__burger-menu:has(.header__burger-menu-checkbox:checked) .header__burger-menu-icon--top {
@@ -148,7 +148,7 @@
     color: var(--text-tertiary-color);
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-medium);
-    transition: 0.3s;
+    transition: color 0.3s;
     position: relative;
     padding: var(--spacing-xs);
 }

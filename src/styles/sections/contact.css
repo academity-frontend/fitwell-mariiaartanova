@@ -7,7 +7,7 @@
 
 @media (max-width: 1024px) {
     .contact__wrapper {
-        padding-top: 32px;
+        padding-top: 64px;
         padding-bottom: 58px;
         gap: 60px;
     }
@@ -68,7 +68,7 @@
 
 @media (max-width: 1024px) {
     .contact__form-title {
-        padding: var(--spacing-3xl) 0 var(--spacing-sm);
+        padding: var(--spacing-xl) 0 var(--spacing-sm);
     }
 }
 
@@ -149,12 +149,12 @@
 }
 
 .contact__checkbox-wrapper {
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-4xl);
 }
 
 @media (max-width: 1024px) {
     .contact__checkbox-wrapper {
-        margin-bottom: var(--spacing-s);
+        margin-bottom: var(--spacing-sm);
     }
 }
 
@@ -177,18 +177,13 @@
 }
 
 .contact__checkbox-input {
-    display: block;
-    transition: 0.3s;
-    user-select: none;
-    appearance: none;
-    cursor: inherit;
-    width: 32px;
-    height: 32px;
-    flex-shrink: 0;
-    margin: 0 20px 0 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
 }
 
-.contact__checkbox-input::before {
+.contact__checkbox::before {
     content: '';
     box-sizing: border-box;
     position: absolute;
@@ -198,11 +193,11 @@
     border-radius: 8px;
     border: 2px solid var(--background-surface-Stroke-color);
     margin-right: 16px;
-    transition: 0.3s;
+    transition: border-color 0.3s;
     align-items: center;
 }
 
-.contact__checkbox-input::after {
+.contact__checkbox::after {
     content: '';
     position: absolute;
     left: 0;
@@ -213,33 +208,33 @@
     opacity: 0;
 }
 
-.contact__checkbox-input:checked::after {
+.contact__checkbox:has(.contact__checkbox-input:checked)::after {
     opacity: 1;
     background: url("../../img/icons/check.svg") center / 12px 10px no-repeat,
     var(--checkbox-checked-color);
 }
 
-.contact__checkbox-input:hover::before {
+.contact__checkbox:has(.contact__checkbox-input:hover)::before {
     border-color: var(--checkbox-hover-color);
-    transition: background .3s, border-color .3s;
 }
 
-.contact__checkbox-input:disabled::before {
+.contact__checkbox:has(.contact__checkbox-input:disabled)::before {
     cursor: not-allowed;
     opacity: 0.4;
     border-color: var(--checkbox-disabled-color);
 }
 
-.contact__checkbox-input:user-valid::before {
+.contact__checkbox:has(.contact__checkbox-input:user-valid)::before {
     border-color: var(--border-color-checkbox-valid);
 }
 
-.contact__checkbox-input:user-invalid::before {
+.contact__checkbox:has(.contact__checkbox-input:user-invalid)::before {
     border-color: var(--border-color-checkbox-invalid);
 }
 
 .contact__checkbox-text {
     font-size: 15px;
+    padding: 0 0 0 52px;
 }
 
 .contact__checkbox-link {

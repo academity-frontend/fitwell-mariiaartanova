@@ -68,7 +68,7 @@
 
 .footer__social {
     color: var(--text-neutral-color);
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .footer__social:hover {
@@ -109,7 +109,7 @@
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-m);
     color: var(--text-neutral-color);
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .footer__links-navigation-link:hover {
@@ -159,7 +159,7 @@
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-m);
     gap: var(--spacing-xs);
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .footer__address-text {
@@ -193,7 +193,7 @@
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-m);
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .footer__contact-email:hover {
@@ -222,7 +222,7 @@
     font-size: var(--font-size-l);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-m);
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .footer__contact-phone:hover {
@@ -253,7 +253,7 @@
     text-align: center;
     padding-top: var(--spacing-xl);
     padding-bottom: var(--spacing-xl);
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-m);
 }
 
 @media (max-width: 1024px) {
@@ -270,7 +270,7 @@
     letter-spacing: 0.06em;
     color: var(--text-primary-color);
     margin: 0;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .footer__copyright-link:hover {

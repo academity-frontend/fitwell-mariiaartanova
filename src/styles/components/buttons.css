@@ -15,7 +15,7 @@
 .btn-primary {
     background-color: var(--button-primary-default-color);
     color: var(--text-primary-color);
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 .btn-primary:hover {
@@ -38,7 +38,7 @@
 .btn-secondary {
     background-color: var(--button-secondary-color);
     color: var(--text-primary-color);
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 .btn-secondary:hover {
@@ -99,13 +99,15 @@
 /*/about/*/
 
 .about__button-item {
-    padding: var(--spacing-s) var(--spacing-s);
+    padding: var(--spacing-3xs) var(--spacing-sm);
     margin: var(--spacing-ml) 0 0;
+    font-size: 14px;
 }
 
 @media (max-width: 1024px) {
     .about__button-item {
         margin-top: 14px;
+        padding: 18px var(--spacing-sm);
     }
 }
 
@@ -126,7 +128,7 @@
 
 @media (max-width: 1024px) {
     .services__button {
-        margin-top: 56px;
+        margin-top: 70px;
     }
 }
 
