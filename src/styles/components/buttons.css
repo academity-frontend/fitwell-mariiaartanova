@@ -1,0 +1,207 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-s);
+    padding: var(--spacing-s) var(--spacing-xl);
+    border-radius: 1000px;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    border: none;
+    font: inherit;
+}
+
+.btn-primary {
+    background-color: var(--button-primary-default-color);
+    color: var(--text-primary-color);
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--button-primary-hover-color);
+}
+
+.btn-primary:focus {
+    background-color: var(--button-primary-hover-color);
+}
+
+.btn-primary:active {
+    background-color: var(--button-primary-pressed-color);
+}
+
+.btn-primary:disabled {
+    background-color: var(--button-primary-disabled-color);
+    color: var(--text-textAccent-color-number);
+}
+
+.btn-secondary {
+    background-color: var(--button-secondary-color);
+    color: var(--text-primary-color);
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--button-secondary-hover-color);
+}
+
+.btn-secondary:focus {
+    background-color: var(--button-secondary-hover-color);
+}
+
+.btn-secondary:active {
+    background-color: var(--button-secondary-active-color);
+}
+
+.btn-secondary:disabled {
+    background-color: var(--button-secondary-disabled-color);
+}
+
+/*/header/*/
+
+.header__button {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-xs);
+    padding: var(--spacing-s) var(--spacing-2xl);
+}
+
+@media (max-width: 362px) {
+    .header__button {
+        padding: 14px 18px;
+    }
+}
+
+/*/hero/*/
+
+.hero__button-secondary {
+    padding: var(--spacing-s) var(--spacing-m);
+    margin-right: var(--spacing-2xs);
+}
+
+@media (max-width: 463px) {
+    .hero__button-secondary {
+        width: 100%;
+        margin-bottom: var(--spacing-3xs);
+    }
+}
+
+.hero__button-primary {
+    padding: var(--spacing-s) 34px;
+}
+
+@media (max-width: 463px) {
+    .hero__button-primary {
+        width: 100%;
+    }
+}
+
+/*/about/*/
+
+.about__button-item {
+    padding: var(--spacing-3xs) var(--spacing-sm);
+    margin: var(--spacing-ml) 0 0;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .about__button-item {
+        margin-top: 14px;
+        padding: 18px var(--spacing-sm);
+    }
+}
+
+@media (max-width: 830px) {
+    .about__button-item {
+        margin: var(--spacing-xl) 0 0;
+    }
+}
+
+/*/services/*/
+
+.services__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+@media (max-width: 1024px) {
+    .services__button {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 830px) {
+    .services__button {
+        margin-top: 72px;
+    }
+}
+
+.services__button-item {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-s) var(--spacing-4xl);
+    gap: var(--gap-s);
+    font-size: var(--font-size-xs);
+}
+
+/*/facilities/*/
+
+.facilities__button {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 1000px;
+    padding-top: var(--spacing-3xl);
+}
+
+@media (max-width: 1024px) {
+    .facilities__button {
+        padding-top: var(--spacing-l);
+    }
+}
+
+@media (max-width: 830px) {
+    .facilities__button {
+        padding-top: var(--spacing-xs);
+    }
+}
+
+.facilities__button-item {
+    padding: var(--spacing-s) var(--spacing-m);
+    gap: var(--gap-s);
+    font-size: var(--font-size-xs);
+}
+
+/*/contact/*/
+
+.contact__button-wrapper {
+    display: flex;
+    margin: 0 0 186px;
+    border-radius: 1000px;
+}
+
+@media (max-width: 1024px) {
+    .contact__button-wrapper {
+        margin: 0 0 var(--spacing-2xl);
+    }
+}
+
+@media (max-width: 830px) {
+    .contact__button-wrapper {
+        margin: 0 0 var(--spacing-l);
+    }
+}
+
+.contact__button {
+    padding: var(--spacing-s) var(--spacing-m);
+    gap: var(--gap-s);
+    font-size: var(--font-size-xs);
+}
+
+@media (max-width: 830px) {
+    .contact__button {
+        width: 100%;
+    }
+}

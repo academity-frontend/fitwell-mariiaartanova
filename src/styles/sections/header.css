@@ -1,0 +1,204 @@
+.header {
+    position: relative;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-m) 100px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    gap: var(--spacing-xs);
+}
+
+@media (max-width: 830px) {
+    .header__container {
+        padding: 20px var(--spacing-m) var(--spacing-m);
+    }
+}
+
+.header__burger-menu {
+    display: none;
+}
+
+@media (max-width: 962px) {
+    .header__burger-menu {
+        display: block;
+    }
+}
+
+.header__burger-menu-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header__burger-menu-button {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 18px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.header__burger-menu-icon {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--backgroung-main-color);
+    transition: background-color 0.3s ease;
+}
+
+.header__burger-menu:has(.header__burger-menu-checkbox:checked) .header__burger-menu-icon--top {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.header__burger-menu:has(.header__burger-menu-checkbox:checked) .header__burger-menu-icon--middle {
+    opacity: 0;
+}
+
+.header__burger-menu:has(.header__burger-menu-checkbox:checked) .header__burger-menu-icon--bottom {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.header__logo {
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.header__logo-icon {
+    display: flex;
+}
+
+@media (max-width: 928px) {
+    .header__logo-icon {
+        width: 84px;
+        height: 56px;
+        margin-right: var(--spacing-xs);
+    }
+}
+
+.header__burger-menu:has(.header__burger-menu-checkbox:checked) ~ .header__navigation {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+}
+
+.header:has(.header__burger-menu-checkbox:checked)::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+@media (max-width: 962px) {
+    .header__navigation {
+        flex-direction: column;
+        position: absolute;
+        top: 96px;
+        left: 0;
+        right: 0;
+        width: auto;
+        background-color: var(--backgroung-main-color);
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 24px;
+        margin: 0 100px 0;
+        padding: 20px 0 20px;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 830px) {
+    .header__navigation {
+        margin: 0 24px 0;
+    }
+}
+
+.header__navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-ml);
+    flex-wrap: wrap;
+}
+
+@media (max-width: 962px) {
+    .header__navigation-list {
+        flex-direction: column;
+        gap: var(--gap-xl);
+    }
+}
+
+.header__burger-menu:has(.header__burger-menu-checkbox:checked) .header__navigation {
+    display: block;
+    background-color: var(--backgroung-main-color);
+}
+
+.header__navigation-text {
+    color: var(--text-tertiary-color);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    transition: color 0.3s;
+    position: relative;
+    padding: var(--spacing-xs);
+}
+
+.header__navigation-text:hover {
+    color: var(--text-primary-color);
+}
+
+@media (max-width: 962px) {
+    .header__navigation-text:hover {
+        color: var(--text-secondary-color);
+    }
+}
+
+.header__navigation-text:focus {
+    color: var(--text-primary-color);
+}
+
+@media (max-width: 962px) {
+    .header__navigation-text:focus {
+        color: var(--text-secondary-color);
+    }
+}
+
+.header__navigation-text:active {
+    color: var(--text-neutral-color);
+}
+
+.header__navigation-text::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--background-surface-Stroke-color);
+    border-radius: 999px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.header__navigation-text:hover::after {
+    color: var(--text-primary-color);
+    width: 32px;
+}
+
+.header__navigation-text:focus::after {
+    color: var(--text-primary-color);
+}
+
+.header__navigation-text:active::after {
+    color: var(--text-neutral-color);
+}

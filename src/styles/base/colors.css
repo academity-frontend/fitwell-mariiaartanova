@@ -1,0 +1,50 @@
+:root {
+    /* text */
+    --text-primary-color: #FFFFFF;
+    --text-secondary-color: #3F3047;
+    --text-tertiary-color: #6E6E6E;
+    --text-neutral-color: #98B9AB;
+    --text-textAccent-color: #9BC995;
+    --text-textAccent-color-number: #77C46D;
+    --text-color-disables: #98B9AB;
+
+
+
+    /* background */
+    --backgroung-main-color: #FFFFFF;
+    --backgroung-secondary-color: #3F3047;
+    --background-surface-Fill-color: #F9F9F9;
+    --background-surface-Fill2-color: #9BC995;
+    --background-surface-Stroke-color: #DADADA;
+    --background-surface-Placeholder-Stroke-color: #9D9D9D;
+
+    /* buttons */
+    --button-primary-default-color: #9BC995;
+    --button-primary-hover-color: #719E6B;
+    --button-primary-pressed-color: #557951;
+    --button-primary-disabled-color: #B4BEDA;
+
+    --button-secondary-color: #98B9AB;
+    --button-secondary-hover-color: #88C6AC;
+    --button-secondary-active-color: #7CBAA0;
+    --button-secondary-disabled-color: #B5DDCC;
+
+    /* input */
+    --input-main-color: #DADADA;
+    --input-hover-color: #98B9AB;
+    --input-filled-color: #9D9D9D;
+    --input-focused-color: #9BC995;
+    --input-active-color: #557951;
+    --input-valid-color: #9BC995;
+    --input-invalid-color: #F10909;
+
+
+    /* checkbox */
+    --checkbox-main-color: #DADADA;
+    --checkbox-hover-color: #9BC995;
+    --checkbox-checked-color: #557951;
+    --checkbox-disabled-color: #F9F9F9;
+
+    --border-color-checkbox-valid: #557951;
+    --border-color-checkbox-invalid: #F10909;
+    }

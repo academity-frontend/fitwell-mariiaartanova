@@ -1,0 +1,18 @@
+@import "src/styles/base/colors.css";
+@import "src/styles/base/typography.css";
+@import "src/styles/base/variables.css";
+
+@import "src/styles/components/buttons.css";
+
+
+@import "src/styles/sections/header.css";
+@import "src/styles/sections/hero.css";
+@import "src/styles/sections/statistics.css";
+@import "src/styles/sections/about.css";
+@import "src/styles/sections/services.css";
+@import "src/styles/sections/features.css";
+@import "src/styles/sections/facilities.css";
+@import "src/styles/sections/gallery.css";
+@import "src/styles/sections/faq.css";
+@import "src/styles/sections/contact.css";
+@import "src/styles/sections/footer.css";

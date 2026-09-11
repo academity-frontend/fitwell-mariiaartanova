@@ -1,0 +1,26 @@
+{
+  "name": "fitwell",
+  "version": "1.0.0",
+  "description": "fitwell project ",
+  "homepage": "https://github.com/academity-frontend/fitwell-mariiaartanova/README.md",
+  "bugs": {
+    "url": "https://github.com/academity-frontend/fitwell-mariiaartanova"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/academity-frontend/fitwell-mariiaartanova.git"
+  },
+  "license": "ISC",
+  "author": "Mariia Artanova",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@vituum/vite-plugin-posthtml": "^2.0.1",
+    "autoprefixer": "^10.5.4",
+    "vite": "^8.0.16"
+  }
+}

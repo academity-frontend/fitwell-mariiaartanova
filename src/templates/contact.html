@@ -1,0 +1,80 @@
+<section class="contact" id="contact">
+    <div class="contact__wrapper container">
+        <div class="contact__img">
+            <img class="contact__img-item"
+                 width="590"
+                 height="660"
+                 src="src/img/contact/contact-img.webp"
+                 alt="Dumbbells and yoga mat in a sunlit room">
+        </div>
+        <form class="contact__form"
+              action="#"
+              method="post">
+            <h2 class="contact__form-title typography-h2">
+                Lets Get In Touch With Us
+            </h2>
+            <p class="contact__form-description typography-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </p>
+            <div class="contact__img-mobile">
+                <img class="contact__img-item-mobile"
+                     width="590"
+                     height="660"
+                     src="src/img/contact/contact-img.webp"
+                     alt="Dumbbells and yoga mat in a sunlit room">
+            </div>
+            <label class="contact__form-label">
+                <span class="visually-hidden">Name</span>
+                <input class="contact__form-input input"
+                       type="text"
+                       name="name"
+                       placeholder="Name"
+                       minlength="2"
+                       maxlength="30"
+                       pattern="[A-Za-zА-Яа-яЁё\s]+"
+                       required
+                >
+            </label>
+            <label class="contact__form-label">
+                <span class="visually-hidden">Phone</span>
+                <input class="contact__form-input input"
+                       type="tel"
+                       name="phone"
+                       placeholder="Phone"
+                       required
+                       pattern="[0-9]{7,20}"
+                >
+            </label>
+            <div class="contact__checkbox-wrapper">
+                <label class="contact__checkbox">
+                    <input class="contact__checkbox-input"
+                           type="checkbox"
+                           required
+                    >
+                    <span class="contact__checkbox-text">
+                            I hereby agree to the
+                            <a class="contact__checkbox-link"
+                               href="#">
+                                Terms and Conditions*
+                            </a>
+                        </span>
+                </label>
+            </div>
+            <div class="contact__button-wrapper">
+                <button class="contact__button btn btn-primary" type="submit">
+                    LET'S DO IT
+                    <svg class="contact__button-icon"
+                         width="14"
+                         height="14"
+                         viewBox="0 0 14 14"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5004 0.75V10.5C13.5004 10.6989 13.4214 10.8897 13.2807 11.0303C13.1401 11.171 12.9493 11.25 12.7504 11.25C12.5515 11.25 12.3607 11.171 12.2201 11.0303C12.0794 10.8897 12.0004 10.6989 12.0004 10.5V2.56031L1.28104 13.2806C1.14031 13.4214 0.94944 13.5004 0.750417 13.5004C0.551394 13.5004 0.360523 13.4214 0.219792 13.2806C0.0790615 13.1399 0 12.949 0 12.75C0 12.551 0.0790615 12.3601 0.219792 12.2194L10.9401 1.5H3.00042C2.8015 1.5 2.61074 1.42098 2.47009 1.28033C2.32943 1.13968 2.25042 0.948912 2.25042 0.75C2.25042 0.551088 2.32943 0.360322 2.47009 0.21967C2.61074 0.0790178 2.8015 0 3.00042 0H12.7504C12.9493 0 13.1401 0.0790178 13.2807 0.21967C13.4214 0.360322 13.5004 0.551088 13.5004 0.75Z"
+                              fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
